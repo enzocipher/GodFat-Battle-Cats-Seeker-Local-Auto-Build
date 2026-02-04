@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  battlecats:
+    build: .
+    container_name: battlecats-server
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+    stdin_open: true
+    tty: true
